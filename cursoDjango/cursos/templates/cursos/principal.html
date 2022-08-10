@@ -1,0 +1,49 @@
+{% extends 'inicio/encabezado.html' %}
+{% block titulo %} Principal{% endblock %}
+
+{% block contenido %}
+<div class="principal">
+
+    <h1>BIENVENIDO AL PORTAL</h1>
+        
+    <p>El objetivo principal de este portal es mostrar los datos de los alumnos registrados por el usuario administrador y el curso que tomaran </p>   
+
+    <!-- Tabla de Alumnos -->
+    <table class="principal">   
+        <thead>
+            <tr class="principal">
+                <th>Foto</th>
+                <th>Nombre</th>
+                <th>Curso</th>
+                <th>Email</th>
+                <th>Tiempo</th>
+                <th>Fecha</th>
+            </tr>
+        </thead> 
+        
+        <tbody>
+            {% for curso in cursos %}   
+                <tr>
+                    <td class="text-center">
+                        <img src="{{curso.imagen.url}}" alt="" width="120px" height="50px" class="img-media" >
+                    </td>
+                    <td class="text-semibold">{{curso.nombre}}</td>
+                    <td class="muted">{{curso.curso}}</td>
+                    <td class="muted">{{curso.email}}</td>
+                    <td class="muted">{{curso.tiempo}}</td>
+                    <td class="muted">{{curso.fecha}}</td>
+                    <td class="text-center">
+                        <a href="{%url 'Eliminar' curso.i%}">Eliminar</a>
+                    </td>
+                    
+                    <td class="text-center">
+                        <a href="{%url 'Editar' curso.i%}">Editar</a>
+                    </td>
+                </tr>
+            {% endfor%}
+        </tbody>
+    </table>
+    <!-- /Tabla de alumnos -->
+
+</div>
+{% endblock %}

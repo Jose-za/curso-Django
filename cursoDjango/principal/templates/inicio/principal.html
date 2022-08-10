@@ -2,5 +2,37 @@
 {% block titulo %} Principal{% endblock %}
 
 {% block contenido %}
-    <h1>HOLA DJANGO</h1>
+<div class="principal">
+
+    <h1>BIENVENIDO AL PORTAL</h1>
+        
+    <p>El objetivo principal de este portal es mostrar los datos de los alumnos registrados por el usuario administrador y el curso que tomaran </p>   
+
+    <!-- Tabla de Alumnos -->
+    <table class="principal">   
+        <thead>
+            <tr class="principal">
+                <th>Foto</th>
+                <th>Matricula</th>
+                <th>Nombre</th>
+                <th>Carrera</th>
+                <th>Turno</th>
+            </tr>
+        </thead> 
+        
+        <tbody>
+            <tr>
+                <td class="text-center">
+                    <img src="" alt="" class="img-media">
+                </td>
+                <td class="text-semibold">UTM1234TIC</td>
+                <td class="muted">Nathalia</td>
+                <td class="muted">Tic</td>
+                <td class="muted">Matutino</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- /Tabla de alumnos -->
+
+</div>
 {% endblock %}

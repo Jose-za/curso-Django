@@ -1,0 +1,258 @@
+:root {
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario:#0097a7;
+    --gris: #757575;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);   
+}
+
+a {
+    color: rgb(3, 5, 131);
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.barra {
+    border-radius: 10px;
+    background-color: #ea0d0d9f;
+}
+
+.cursos {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 550px;
+}
+
+
+.button1 {
+    background-color: #2afe0a; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    margin-right: 6px;
+  }
+  .button2 {
+    background-color: #3b0afe; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 4rem;
+    font-weight: bold;
+  }
+  
+.border {
+    background-color: rgb(255, 246, 246);
+    border-left: red 5px solid;
+    padding-left: 2rem;
+  }
+  .page-title {
+    color: red;
+    padding: 10px;
+    font-size: 25px;
+  }
+.page-parrafo {
+  font-size: 20px;
+}
+.centrar {
+  width: 1000px;
+  margin: auto;
+}
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  .form {
+    background-color: white;
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    margin-bottom: 4rem;
+  }
+
+  .centrar-input {
+    text-align: center;
+  }
+.centrar-label {
+  margin-left: 430px;
+
+}
+  
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+  
+  }
+  
+input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #bd0e0e; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #bd0e0e; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  .button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #af0000; 
+    border-color: #000000; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  
+  button p{
+    color: #fff; 
+  }
+  
+  
+span{
+    color: #ff00c3; 
+  }
+  
+  
+.aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+  
+h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #b4040a;
+  }
+  
+  
+  h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+  }
+  
+  
+  p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+
+.formulario {
+    margin-left: 550px;
+}
+
+.principal {
+    text-align: center;
+    width: 1200px;
+    margin: auto;
+}
+table {
+    width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 4rem;
+  }
+  th, td {
+    width: 10%;
+    text-align: center;
+    margin-top: 10px;
+    vertical-align: auto;
+    border: 1px solid #000;
+    border-spacing: 0;
+    background-color: rgb(241, 241, 241);
+  }
+  .submitBtn {
+    display: block;
+    margin-left: 435px;
+    padding: 15px 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 2rem;
+  }
+  
+  .submitBtn:hover {
+    background-color: #9867C5;
+    transform: translateY(-2px);
+  }

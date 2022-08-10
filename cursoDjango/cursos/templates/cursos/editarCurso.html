@@ -1,0 +1,49 @@
+{% extends "inicio/encabezado.html" %}
+
+{% block titulo %} Editar {% endblock %}
+
+{% block encabezado %}
+
+<!--Encabezdo -->
+<div class="contenedor">
+    <div>
+        <h3>Editar Curso</h3>
+    </div>
+
+</div>
+<!-- /Encabezado-->
+
+
+{% endblock %} {% block contenido %}
+
+<!-- Formulario -->
+
+<div class="contenedor signupFrm">
+    <form class="form " action="{% url 'Editar' curso.i %}" method="POST" role="form">
+        {%csrf_token%}
+        <label class="centrar-label">Nombre</label>
+        <div class="inputContainer centrar-input">
+            <input value="{{curso.nombre}}" name="nombre" type="text" class="form-control">
+        </div>
+
+        <label class="centrar-label">Curso:</label>
+        <div class="inputContainer centrar-input">
+            <input value="{{curso.curso}}" name="curso" type="text" class="form-control">
+        </div>
+
+        <label class="centrar-label">Email</label>
+        <div class="inputContainer centrar-input">
+            <input value="{{curso.email}}" name="email" type="text" class="form-control">
+        </div>
+
+        <label class="centrar-label">Curso intensivo:</label>
+        <div class="inputContainer centrar-input">
+            <input value="{{curso.tiempo}}" name="tiempo" type="text" class="form-control">
+        </div>
+
+      <input type="submit" class="submitBtn" value="Editar">
+    </form>
+</div>
+ 
+
+{% endblock %}

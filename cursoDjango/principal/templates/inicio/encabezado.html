@@ -5,11 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block titulo %}{% endblock %}</title>
+    <link rel="stylesheet" href="../../static/inicio/css/style.css">
+   
 </head>
 <body>
-    <a href="{% url 'Principal' %}">Home</a>
-    <a href="{% url 'Cursos' %}">Cursos</a>
-    <a href="{% url 'Contacto' %}">Contacto</a>
+    <div class="contenedor nav-bg">
+        <nav class="navegacion-principal">
+            <a href="{% url 'Principal' %}">Home</a>
+            <a href="{% url 'Cursos' %}">Cursos</a>
+            <a href="{% url 'Contacto' %}">Contacto</a>
+        </nav>
+    </div>
+
+     <!--Barra de navegación-->
+     <div class="barra">
+        <ul>
+            <a href="{%url 'Principal' %}">
+                {% if request.path == '/' %}
+                    Principal
+                {%else%}
+                    Principal{{request.path}}
+                {%endif%}
+            </a>
+        </ul>
+    </div>
+    <!--Barra de navegación-->
+
+    {% block encabezado %}
+
+    {% endblock%}
+   
 
     {% block contenido %}
 
